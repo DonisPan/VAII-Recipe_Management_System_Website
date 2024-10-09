@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Login...</title>
+</head>
+<body>
+    <div class="login_container">
+        <h1>Login</h1>
+        <div class="login_label_combo">
+            <text>Email:</text>
+            <label for="email"></label><input type="email" id="email" name="Email">
+        </div>
+        <div class="login_label_combo">
+            <text>Password:</text>
+            <label for="password"></label><input type="password" id="password" name="Password">
+        </div>
+
+        <div class="login_buttons">
+            <button type="button" onclick="register()">Sign up</button>
+            <button type="button" onclick="login()">Sign in</button>
+        </div>
+    </div>
+<script>
+    function login() {
+        window.location.href = 'recipe_list.html'
+    }
+    function register() {
+        window.location.href = 'register.html'
+    }
+</script>
+</body>
+</html>
