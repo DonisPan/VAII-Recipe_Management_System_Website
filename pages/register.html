@@ -8,29 +8,32 @@
 <body>
 <div class="register_container">
     <h1>Register</h1>
+
     <div class="register_label_combo">
         <text>Name:</text>
         <label for="name"></label><input type="email" id="name" name="Email">
     </div>
+
     <div class="register_label_combo">
         <text>Surname:</text>
         <label for="surname"></label><input type="email" id="surname" name="Email">
     </div>
+
     <div class="register_label_combo">
         <text>Gender:</text>
-<!--        <label for="gender"></label><input type="email" id="gender" name="Email">-->
         <label for="gender"></label><select name="gender" id="gender">
             <option value="">Select gender</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
         </select>
-
     </div>
+
     <div class="register_label_combo">
         <text>Email:</text>
         <label for="email"></label><input type="email" id="email" name="Email">
     </div>
+
     <div class="register_label_combo">
         <text>Password:</text>
         <label for="password"></label><input type="password" id="password" name="Password">
@@ -38,11 +41,13 @@
 
     <div class="register_buttons">
         <button type="button" onclick="history.back()">Cancel</button>
-        <button type="button" onclick="login()">Sign up</button>
+        <button type="button" onclick="register()">Sign up</button>
     </div>
+
 </div>
 <script>
-    function login() {
+    function register() {
+        // Do register operations
         window.location.href = 'recipe_list.html'
     }
 </script>

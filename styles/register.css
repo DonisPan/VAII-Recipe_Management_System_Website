@@ -9,6 +9,7 @@
     border: 2px solid black;
     border-radius: 10px;
     box-sizing: border-box;
+    font-family: Georgia, serif;
 
     h1 {
         text-align: center;
@@ -30,7 +31,7 @@
     label {
         padding: 5px;
     }
-    input {
+    input, select{
         width: 100%;
         padding: 5px;
         margin-left: 10px;
@@ -40,29 +41,22 @@
         border-radius: 5px;
     }
     select {
-        width: 100%;
         height: 25px;
-        padding: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-sizing: border-box;
-        border: 1px solid lightgray;
-        border-radius: 5px;
     }
 }
 
 .register_buttons {
     display: flex;
-    padding: 5px;
-    margin: 5px;
+    margin-bottom: 10px;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
 
     button {
+        font-family: Georgia, serif;
         background-color: darkgrey;
         border: none;
         border-radius: 5px;
-        margin: 2px;
+        margin-right: 10px;
         padding: 10px 10px;
         color: white;
         text-align: center;

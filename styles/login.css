@@ -9,6 +9,7 @@
     border: 2px solid black;
     border-radius: 10px;
     box-sizing: border-box;
+    font-family: Georgia, serif;
 
     h1 {
         text-align: center;
@@ -21,8 +22,8 @@
 
 .login_label_combo {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin: 10px;
     text {
         float: left;
         padding: 5px;
@@ -33,33 +34,23 @@
     input {
         width: 100%;
         padding: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
         box-sizing: border-box;
         border: 1px solid lightgray;
         border-radius: 5px;
     }
 }
 
-.login_buttons {
-    display: flex;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    justify-content: center;
-
-    button {
-        background-color: darkgrey;
-        border: none;
-        border-radius: 5px;
-        margin: 2px;
-        padding: 10px 10px;
-        color: white;
-        text-align: center;
-        font-size: 16px;
-    }
-    button:hover {
-        background-color: gray;
-    }
+button {
+    font-family: Georgia, serif;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
 }
 
+button:hover {
+    background-color: gray;
+}

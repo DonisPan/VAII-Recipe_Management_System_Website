@@ -8,23 +8,29 @@
 <body>
     <div class="login_container">
         <h1>Login</h1>
+
         <div class="login_label_combo">
             <text>Email:</text>
             <label for="email"></label><input type="email" id="email" name="Email">
         </div>
+
         <div class="login_label_combo">
             <text>Password:</text>
             <label for="password"></label><input type="password" id="password" name="Password">
         </div>
 
-        <div class="login_buttons">
-            <button type="button" onclick="register()">Sign up</button>
-            <button type="button" onclick="login()">Sign in</button>
+        <div class="login_label_combo">
+                <button type="button" onclick="history.back()">Cancel</button>
+            <div class="login_buttons">
+                <button type="button" onclick="register()">Sign up</button>
+                <button type="button" onclick="login()">Sign in</button>
+            </div>
         </div>
     </div>
 <script>
     function login() {
-        window.location.href = 'recipe_list.html'
+        // Do login operations
+        history.back()
     }
     function register() {
         window.location.href = 'register.html'
