@@ -11,42 +11,41 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <p class="navbar-brand" >Cookerino!</p>
-            <div class="collapse navbar-collapse"
-                 id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                           href="#"
-                           onclick="window.location.reload()">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled"
-                           aria-disabled="true">Favourites</a>
-                    </li>
-                </ul>
-                <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-outline-success"
-                            type="button"
-                            onclick="goLogin()">Sign in</button>
-                    <button class="btn btn-outline-success"
-                            type="button"
-                            onclick="goRegister()">Sign up</button>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <p class="navbar-brand" >Cookerino!</p>
+                <div class="collapse navbar-collapse"
+                     id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="#"
+                               onclick="window.location.reload()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"
+                               href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"
+                               aria-disabled="true">Favourites</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-outline-success"
+                                type="button"
+                                onclick="goLogin()">Sign in</button>
+                        <button class="btn btn-outline-success"
+                                type="button"
+                                onclick="goRegister()">Sign up</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
 </header>
 <div class="recipe_list_container">
     <div class="recipe_container">
@@ -64,7 +63,7 @@
 
 
 <script>
-
+    //Function borrowed from StackOverflow
     function multiplyNode(node, count, deep) {
         for (var i = 0, copy; i < count - 1; i++) {
             copy = node.cloneNode(deep);
@@ -72,6 +71,7 @@
         }
     }
     multiplyNode(document.querySelector('.recipe_container'), 12, true);
+
     function goLogin() {
         window.location.href = "pages/login.html";
     }

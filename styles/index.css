@@ -1,8 +1,12 @@
+
+
 .container-fluid {
+    overflow: hidden;
+    width: 100%;
     background-color: #eed7c5;
-    padding: 10px;
     position: fixed;
-    transform: translateY(40%);
+    padding: 10px;
+    top: 0;
 }
 
 .navbar-brand {
@@ -40,6 +44,11 @@
     grid-template-rows: auto;
     gap: 10px;
     background-color: #eee2df;
+    margin-top: 60px;
+}
+
+.recipe_container:hover {
+    box-shadow: 0 5px 10px 0 #b36a5e;
 }
 
 .recipe_container {
@@ -60,5 +69,6 @@
 
     p {
         text-align: center;
+        margin: 0;
     }
 }

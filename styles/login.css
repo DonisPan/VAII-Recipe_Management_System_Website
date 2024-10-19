@@ -1,55 +1,87 @@
-.login_container {
-    padding: 10px;
-    margin: 10px;
-    position: absolute;
-    width: 40%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-family: Georgia, serif;
+html, body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 
-    h1 {
-        text-align: center;
-    }
-
-    h3 {
-        margin-left: 10px;
-    }
+    background-color: #eee2df;
 }
 
-.login_label_combo {
-    display: flex;
+.login_container {
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    border: #b36a5e 2px solid;
+    border-radius: 15px;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.login_container_box {
     justify-content: space-between;
-    margin: 10px;
-    text {
-        float: left;
-        padding: 5px;
-    }
-    label {
-        padding: 5px;
-    }
-    input {
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-    }
-    button {
-        font-family: Georgia, serif;
-        background-color: darkgrey;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 10px;
-        color: white;
+    align-content: center;
+
+    h1 {
+        margin: 0;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 40px;
         text-align: center;
-        font-size: 16px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px;
+        background-color: transparent;
+        color: #c89f9c;
+        border: #c89f9c 2px solid;
+        border-radius: 10px;
     }
 
     button:hover {
-        background-color: gray;
+        background-color: #c89f9c;
+        color: #eed7c5;
+    }
+
+    div {
+        justify-self: right;
+    }
+}
+.login_container_box2 {
+    display: flex;
+
+    label {
+        margin: 0;
+        padding-left: 10px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        align-self: center;
+
+    }
+
+    input {
+        width: 85%;
+        padding: 5px;
+        margin-left: 10px;
+        box-sizing: border-box;
+        border: #c89f9c 1px solid;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 15px;
+    }
+}
+
+.login_container_box3 {
+    display: flex;
+    height: fit-content;
+    margin-top: 10px;
+
+    div {
+        justify-self: right;
     }
 }

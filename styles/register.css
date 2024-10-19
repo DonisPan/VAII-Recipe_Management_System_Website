@@ -1,69 +1,14 @@
-.register_container {
-    padding: 10px;
-    margin: 10px;
-    position: absolute;
-    width: 40%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border: 2px solid black;
-    border-radius: 10px;
+.login_container {
+    height: 420px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.login_container_box2 select {
+    width: 85%;
+    padding: 5px;
+    margin-left: 10px;
     box-sizing: border-box;
-    font-family: Georgia, serif;
-
-    h1 {
-        text-align: center;
-    }
-
-    h3 {
-        margin-left: 10px;
-    }
+    border: #c89f9c 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
 }
-
-.register_label_combo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    text {
-        float: left;
-        padding: 5px;
-    }
-    label {
-        padding: 5px;
-    }
-    input, select{
-        width: 100%;
-        padding: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-sizing: border-box;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-    }
-    select {
-        height: 25px;
-    }
-}
-
-.register_buttons {
-    display: flex;
-    margin-bottom: 10px;
-    position: relative;
-    justify-content: space-between;
-
-    button {
-        font-family: Georgia, serif;
-        background-color: darkgrey;
-        border: none;
-        border-radius: 5px;
-        margin-right: 10px;
-        padding: 10px 10px;
-        color: white;
-        text-align: center;
-        font-size: 16px;
-    }
-    button:hover {
-        background-color: gray;
-    }
-}
-
